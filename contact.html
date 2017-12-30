@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="icon" type="image/JPG" href="assets/images/IMG_1999.JPG">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -35,26 +36,26 @@
                     <div class="card-content white-text">
                       <span class="card-title">Contact Me</span>
                       <div class="row">
-                          <form class="col s12">
+                          <form class="col s12" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzWgWuWxRHAUxa5LUBdaheFZ09x9g1oqQLxQIfFnTFs76e6A3CC/exec">
                             <div class="row">
                               <div class="input-field col s6">
-                                <input id="first_name" type="text" class="validate">
-                                <label class="active" for="first_name">Name</label>
+                                <input id="name" name="name" type="text" class="validate">
+                                <label class="active" for="name">Name</label>
                               </div>
                             </div>
                             <div class="row">
                               <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
+                                <input id="email" name="email" type="email" class="validate">
                                 <label class="active" for="email">Email</label>
                               </div>
                             </div>
                             <div class="row">
                               <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label class="active" for="textarea1">Leave a Message</label>
+                                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                <label class="active" for="message">Leave a Message</label>
                               </div>
                             </div>
-                            <button class="btn btn-floating btn-large orange pulse" type="submit" name="action">Submit
+                            <button class="btn btn-floating btn-large orange pulse" type="submit" value="send">Submit
                             </button>
                           </form>
                         </div>
