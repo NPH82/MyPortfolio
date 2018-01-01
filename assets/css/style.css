@@ -11,15 +11,66 @@ main {
   background-size: cover;
  
 }
-.card {
-  margin-top: 100px;
+#card {
+  margin-top: 70px;
   /* padding-bottom: 100px; */
-  background-color: grey;
-  height: 50vh;
-  width: 90vh;
+  -moz-border-radius-bottomright: 50px 25px;
+  border-bottom-right-radius: 50px 25px;
 }
 
-img {
-  width: 40px;
-  height: 600px;
+.card-title {
+  font-size: 60px;
+}
+
+h1 {
+  color: rgb(204, 202, 202);
+  animation: entry 2s forwards;
+}
+
+#wave1 {
+  animation: chippy1 3s forwards;
+}
+
+#wave2 {
+  animation: chippy2 4s forwards;
+}
+
+#wave3 {
+  animation: chippy3 5s forwards;
+}
+
+@keyframes entry {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+@keyframes chippy1 {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+@keyframes chippy2 {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+@keyframes chippy3 {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
 }
