@@ -12,11 +12,13 @@ main {
  
 }
 
+.brand-logo {
+  margin-left: 4vh;
+}
 #card {
   margin-top: 30px;
-  /* padding-bottom: 100px; */
-  -moz-border-radius-bottomright: 50px 25px;
-  border-bottom-right-radius: 50px 25px;
+  width: 10vw;
+  height: 10vh;
 }
 
 .card-title {
@@ -28,6 +30,10 @@ h1 {
   color: rgb(204, 202, 202);
   font-size: 5vh;
   animation: entry 2s forwards;
+}
+
+img {
+  height: 40vh;
 }
 
 #wave1 {
@@ -42,6 +48,11 @@ h1 {
   animation: chippy3 5s forwards;
 }
 
+#wave4 {
+  margin: 5vh;
+  animation: socially 6s forwards;
+}
+
 #work {
   font-size: 5vh;
   padding-top: 60px;
@@ -54,6 +65,67 @@ h1 {
     typing 3.5s steps(45, end),
           .75s step-end infinite;
 }
+
+/* social media buttons */
+.btn.social > :first-child,
+.btn-large.social > :first-child,
+.col.social > :first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.btn.social,
+.btn-large.social,
+.col.social {
+  padding: 0 2rem 0 0;
+}
+.btn.social i,
+.btn-large.social i,
+.col.social i {
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+.btn.social-icon,
+.btn-large.social-icon,
+.col.social-icon {
+  padding: 0;
+}
+.btn.social-icon i,
+.btn-large.social-icon i,
+.col.social-icon i {
+  padding: 0 1rem;
+  margin-right: 0;
+}
+.btn-large.social-icon {
+  padding: 0 1rem;
+}
+.col.social {
+  width: 100%;
+  text-align: left;
+}
+.col.social i.fa-fw {
+  width: 3.2rem;
+}
+.github {
+  background-color: #444444;
+  color: #fff !important;
+}
+.github i {
+  color: #fff !important;
+}
+.github:hover {
+  background-color: #5e5e5e !important;
+}
+
+.linkedin {
+  background-color: #007bb6;
+  color: #fff !important;
+}
+.linkedin i {
+  color: #fff !important;
+}
+.linkedin:hover {
+  background-color: #009de9 !important;
+}
+
 
 
 @keyframes entry {
@@ -92,6 +164,15 @@ h1 {
   }
 }
 
+@keyframes socially {
+  from {
+    transform: translate(0px, 1000px);
+  }
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
 @keyframes presenting {
   from {
     transform: translate(-1000px, 0px);
@@ -107,8 +188,4 @@ h1 {
   to { width: 100%; overflow: hidden;}
 }
 
-/* @media screen and (max-width: 700px) {
-  #work {
-    font-size: 50px;
-  }
-} */
+
